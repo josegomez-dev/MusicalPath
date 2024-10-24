@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "155049218557",
+    "firebase_url": "https://musical-path-c692e-default-rtdb.firebaseio.com",
+    "project_id": "musical-path-c692e",
+    "storage_bucket": "musical-path-c692e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:155049218557:android:99fb595399c6d042310994",
+        "android_client_info": {
+          "package_name": "com.americapixelgames.musicalpath"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUCioak2Sbho21OovJtMb_aTLgoX7zPtA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
