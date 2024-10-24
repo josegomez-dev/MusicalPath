@@ -65,13 +65,8 @@
 .animated-text {
   color: #fff;
   font-size: 18px;
+  padding: 10px 15px 0px 15px;
   text-align: center;
-  animation: typing 4s steps(40, end);
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid rgba(255, 255, 255, 0.75);
-  width: 0;
-  padding-top: 10px;
 }
 
 @keyframes glow {
@@ -98,14 +93,6 @@
   }
 }
 
-@keyframes typing {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
-}
     </style>
   </head>
   <body>
@@ -122,7 +109,7 @@
               <div id="unity-loading-bar">
 
                 <div>
-                  <div style="margin: 0 auto; ;text-align: center; width: 200px; white-space: no-wrap;">
+                  <div style="color: orange; margin: 0 auto; ;text-align: center; width: 200px; white-space: no-wrap;">
                     <p>Por favor espera mientras el juego se carga</p>
                   </div>
 
@@ -136,7 +123,7 @@
                   </div>
 
                   <br/>
-                  <div style="margin: 0 auto; text-align: center; width: 200px; white-space: no-wrap;">
+                  <div style="color: orange; margin: 0 auto; text-align: center; width: 200px; white-space: no-wrap;">
                     <p>La primera vez tarda un poco mas...</p>
                   </div>
 
