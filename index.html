@@ -25,29 +25,150 @@
     <meta property="og:image" content="TemplateData/banner.png" />
     <meta property="og:image:alt" content=" This racing game is designed to teach you how to identify notes, musical degrees, and the emotions associated with them while testing your memory and agility." />
     <meta property="og:description" content=" This racing game is designed to teach you how to identify notes, musical degrees, and the emotions associated with them while testing your memory and agility." />
-
-
     <title>Musical Path</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="TemplateData/style.css">
+    <style>
+.animated-box {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  border: 3px solid #fff;
+  position: relative;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  animation: glow 1.5s infinite ease-in-out;
+  margin-top: 15px;
+}
 
+.animated-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #00f, #f00, #ff0, #0f0);
+  background-size: 400% 400%;
+  opacity: 0.8;
+  filter: blur(10px);
+  z-index: -1;
+  animation: gradientMove 4s ease-in-out infinite;
+}
+
+.animated-text {
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  animation: typing 4s steps(40, end), blink 0.75s step-end infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid rgba(255, 255, 255, 0.75);
+  width: 0;
+  padding-top: 10px;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2), 0 0 20px rgba(0, 255, 255, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4), 0 0 30px rgba(0, 255, 255, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2), 0 0 20px rgba(0, 255, 255, 0.4);
+  }
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from {
+    border-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-color: transparent;
+  }
+}
+    </style>
   </head>
   <body>
-    <div>
-      <div class=" row">
+
+    <div style="padding: 25px;">
+      <h1 style="text-align: center;">El Camino Musical</h1>
+      <div class="row">
         <div class="col-md-12 col-sm-12">
           <div class="container-game">
             <div class="canvas-container">
               <!-- Game -->
-              <canvas id="unity-canvas" style="height: calc(100vh - 200px);" tabindex="-1"></canvas>
+              <canvas id="unity-canvas" style="width: 100%; ; height: calc(100vh - 300px);" tabindex="-1"></canvas>
               <!-- Game -->
               <div id="unity-loading-bar">
+
                 <div>
-                  <div id="unity-logo"></div>
-                  <div id="unity-progress-bar-empty">
-                    <div id="unity-progress-bar-full"></div>
+                  <div style="margin: 0 auto; ;text-align: center; width: 200px; white-space: no-wrap;">
+                    <p>Por favor espera mientras el juego se carga</p>
                   </div>
+
+                  <div style="border: 1px solid white;">
+                    <br/>
+                    <div id="unity-logo"></div>
+                    <div id="unity-progress-bar-empty">
+                      <div id="unity-progress-bar-full"></div>
+                    </div>
+                    <br/>
+                  </div>
+
+                  <br/>
+                  <div style="margin: 0 auto; text-align: center; width: 200px; white-space: no-wrap;">
+                    <p>La primera vez tarda un poco mas...</p>
+                  </div>
+
+                  <br>
+                  <p style="color: white; font-size: 12px; text-align: right;">Creadores del Juego</p>
+                  <div class="animated-box">
+                    <p class="animated-text">
+                      Jose Alejandro Gomez Castro
+                    </p>
+                  </div>
+                  <div class="animated-box">
+                    <p class="animated-text">
+                      Marvin Calvo
+                    </p>
+                  </div>
+
+                  <br/>
+                  <br/>
+
+                  <div style="text-align: center;">
+                    <p style="color: white;">Powered by <img width="50px" style="margin-top: -10px;" src="./TemplateData/doradeogomez.png" alt=""></p>
+                  </div>
+
                 </div>
               </div>
               <!-- Btn full screen -->
@@ -72,10 +193,7 @@
           </div>
         </div>
       </div>
-
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
 
     <script type="text/javascript">
       getaGame();
