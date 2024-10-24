@@ -38,7 +38,6 @@ body { padding: 0; margin: 0 }
 #unity-footer {
     position: relative
 }
-.unity-mobile #unity-footer {  }
 #unity-build-title { float: right; margin-right: 10px; line-height: 38px; font-family: arial; font-size: 18px }
 #unity-fullscreen-button {
     cursor:pointer;
@@ -68,11 +67,7 @@ body { padding: 0; margin: 0 }
     justify-content: center;
     align-items: center;
 }
-@media screen and (min-width: 200px) and (orientation: portrait) {
-    .container-game{
-        margin-top: 100px;
-    }
-}
+
 .banner-parallax {
     background-image: url('banner-2080x828.png'); /* Ruta de tu imagen de fondo */
     background-attachment: fixed;
@@ -86,34 +81,12 @@ body { padding: 0; margin: 0 }
     font-size: 24px;
 
 }
-@media only screen and (min-width: 1024px) {
-    .banner-parallax {
-        height: 100vh;
-    }
-}
-@media screen and (min-width: 200px) and (orientation: portrait) {
-    .banner-parallax {
-        height: 100vh;
-    }
-}
-@media screen and (max-width: 780px) and (orientation: landscape) {
-    .banner-parallax {
-        height: none;
-    }
-}
+
 .parallax-content{
     background-color: #864efa8c;
     padding: 20px;
     border-radius: 10px;
 
-}
-@media only screen and (min-width: 1024px) {
-    .parallax-content{
-        background-color: #864efa8c;
-        padding: 20px;
-        /* padding-top: 200px; */
-        border-radius: 10px;
-    }
 }
 #unity-canvas {
     top: 0;
