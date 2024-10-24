@@ -4,7 +4,7 @@ body { padding: 0; margin: 0 }
 /* #unity-container.unity-mobile { position: fixed; width: 100%; height: 100% } */
 #unity-canvas { background: #000000 }
 
-#unity-loading-bar { 
+#unity-loading-bar {
     width: 100%;
     height: 100%;
     background: black;
@@ -12,42 +12,42 @@ body { padding: 0; margin: 0 }
 
     align-items: center;
     justify-content: center;
-    position: absolute;  
-    left: 50%; top: 50%; 
-    transform: translate(-50%, -50%); 
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
 
 }
-#unity-logo { 
-    width: 154px; 
-    height: 130px; 
-    background: url('unity-logo-dark.png') no-repeat center 
+#unity-logo {
+    width: 154px;
+    height: 130px;
+    background: url('unity-logo-dark.png') no-repeat center
 }
-#unity-progress-bar-empty { 
-    width: 141px; 
-    height: 18px; 
-    margin-top: 10px; 
-    margin-left: 6.5px; 
-    background: url('progress-bar-empty-dark.png') no-repeat center 
+#unity-progress-bar-empty {
+    width: 141px;
+    height: 18px;
+    margin-top: 10px;
+    margin-left: 6.5px;
+    background: url('progress-bar-empty-dark.png') no-repeat center
 }
-#unity-progress-bar-full { 
-    width: 0%; 
-    height: 18px; 
-    margin-top: 10px; 
+#unity-progress-bar-full {
+    width: 0%;
+    height: 18px;
+    margin-top: 10px;
     background: url('progress-bar-full-dark.png') no-repeat center
  }
-#unity-footer { 
-    position: relative 
+#unity-footer {
+    position: relative
 }
 .unity-mobile #unity-footer {  }
 #unity-build-title { float: right; margin-right: 10px; line-height: 38px; font-family: arial; font-size: 18px }
-#unity-fullscreen-button { 
-    cursor:pointer; 
-    float: right; 
-    width: 38px; 
-    height: 38px; 
-    background: url('fullscreen-button.png') no-repeat center 
+#unity-fullscreen-button {
+    cursor:pointer;
+    float: right;
+    width: 38px;
+    height: 38px;
+    background: url('fullscreen-button.png') no-repeat center
 }
-.unity-mobile #unity-footer #unity-fullscreen-button { 
+.unity-mobile #unity-footer #unity-fullscreen-button {
     margin-top: 10px;
     cursor: pointer;
     float: right;
@@ -55,24 +55,24 @@ body { padding: 0; margin: 0 }
     height: 30px;
 }
 
-#unity-warning { 
-    position: absolute; 
-    left: 50%; 
-    top: 5%; 
-    transform: translate(-50%); 
-    background: white; 
-    padding: 10px; 
+#unity-warning {
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    transform: translate(-50%);
+    background: white;
+    padding: 10px;
     display: none }
 .container-game{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-/* @media screen and (min-width: 200px) and (orientation: portrait) {
+@media screen and (min-width: 200px) and (orientation: portrait) {
     .container-game{
         margin-top: 100px;
     }
-} */
+}
 .banner-parallax {
     background-image: url('banner-2080x828.png'); /* Ruta de tu imagen de fondo */
     background-attachment: fixed;
@@ -84,9 +84,9 @@ body { padding: 0; margin: 0 }
     text-align: center;
     color: #ffffff;
     font-size: 24px;
-    
+
 }
-/* @media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
     .banner-parallax {
         height: 100vh;
     }
@@ -100,12 +100,12 @@ body { padding: 0; margin: 0 }
     .banner-parallax {
         height: none;
     }
-} */
+}
 .parallax-content{
     background-color: #864efa8c;
     padding: 20px;
     border-radius: 10px;
-    
+
 }
 @media only screen and (min-width: 1024px) {
     .parallax-content{
@@ -124,33 +124,33 @@ body { padding: 0; margin: 0 }
 .canvas-container {
     width: 100%;
 }
-#unity-webgl-logo { 
-    float:left; 
+#unity-webgl-logo {
+    float:left;
     margin-left: 30px;
-    width: 100px; 
-    height: 60px; 
-    background: url('webgl-logo.png') no-repeat center 
+    width: 100px;
+    height: 60px;
+    background: url('webgl-logo.png') no-repeat center
 }
-#unity-unity-logo { 
-    float:left; 
+#unity-unity-logo {
+    float:left;
     margin-left: 30px;
-    width: 100px; 
-    height: 60px; 
-    background: url('unity.png') no-repeat center 
+    width: 100px;
+    height: 60px;
+    background: url('unity.png') no-repeat center
 }
-#unity-apg-logo { 
-    float:left; 
+#unity-apg-logo {
+    float:left;
     margin-left: 30px;
-    width: 110px; 
-    height: 60px; 
-    background: url('apglogo.png') no-repeat center 
+    width: 110px;
+    height: 60px;
+    background: url('apglogo.png') no-repeat center
 }
-#unity-catarsis-logo { 
-    float:left; 
+#unity-catarsis-logo {
+    float:left;
     margin-left: 30px;
-    width: 110px; 
-    height: 60px; 
-    background: url('catarsis2.png') no-repeat center 
+    width: 110px;
+    height: 60px;
+    background: url('catarsis2.png') no-repeat center
 }
 /* Estilo base del botón */
 .button {
@@ -162,33 +162,33 @@ body { padding: 0; margin: 0 }
     border-radius: 5px; /* Esquinas redondeadas */
     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
   }
-  
+
   /* Efecto al pasar el ratón sobre el botón */
   .button:hover {
     background-color: #512da8; /* Cambia el color al pasar el ratón */
   }
-  
+
   /* Efecto de sombra al hacer clic en el botón */
   .button:active {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra suave */
   }
-  
+
   /* Estilo del texto dentro del botón */
   .button span {
     font-weight: bold; /* Texto en negrita */
   }
-  
+
   /* Otros estilos opcionales */
   .button.outline {
     background-color: transparent; /* Botón transparente */
     border: 2px solid #673ab7; /* Borde sólido morado oscuro */
     color: #673ab7; /* Color de texto morado oscuro */
   }
-  
+
   .button.round {
     border-radius: 50px; /* Botón redondo */
   }
-  
+
   /* Estilo para un botón pequeño */
   .button.small {
     padding: 5px 10px; /* Espaciado interno más pequeño */
